@@ -1,0 +1,358 @@
+/* 
+This is where we set the font for the webpage
+
+
+ pixels are absolute units. They won't change when you resize the window. n
+ otice that the font size of 50px doesn't change when we resize the window.
+
+ 1 REM = 16px. 
+
+ The full form of VW is viewport width. It works like the percentage unit. Specifying 10vw is equivalent to occupying 10% of entire visible screen width.
+
+
+ So VH is equiavelnt to occupying of the ente visible screen height,
+*/
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Quicksand:wght@300..700&display=swap" rel="stylesheet');
+
+/*
+What we are saying is to set all elements to this font
+*/
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*
+This would be referring to when we see code like <a href="#">See More</a>
+*/
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+Within here is where we are setting the body of the page, the color, image which is a combination of color
+*/
+body{
+    height: 100vh;
+    color: #fff;
+    background-color: #04d2e1;
+    background-image:
+    radial-gradient(at 9% 89%, hsla(215,90%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 72% 6%, rgb(109, 236, 158) 0px, transparent 50%),
+    radial-gradient(at 24% 19%, rgb(59, 185, 243) 0px, transparent 50%),
+    radial-gradient(at 65% 6%, rgb(58, 158, 116) 0px, transparent 50%),
+    radial-gradient(at 20% 98%, rgb(44, 60, 204) 0px, transparent 50%),
+    radial-gradient(at 44% 9%, rgb(3, 218, 207) 0px, transparent 50%),
+    radial-gradient(at 10% 9%, rgb(11, 189, 79) 0px, transparent 50%);
+    min-height: 100vh;
+}
+
+
+
+/*
+This is referring to our <div class="container">, all that's done is making it felxible and set everything center
+*/
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/*
+Now what we are doing here is set the glass container to make it look like a glass since on the webpage we can see some of the colors behind it
+*/
+.glass-container{
+    display: black;
+    max-width: 72vw;
+    margin-top: 0vh;
+    margin-bottom: 30px;
+    background: rgba(0,0,0,0.56);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+
+/*
+This is rferring to <div class="logo"><a href="#">Ready To Refine & Move Towards A Better Tommorow?</a></div>
+*/
+.logo{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+/*
+This is referring to the unlisted list 
+*/
+ul.nav-links{
+    margin:0;
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+/*
+This is referring to our listed items
+*/
+li.nav-link{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
+/*
+This is refrring to content division
+*/
+.content{
+    display: flex;
+    width: 100%;
+}
+
+/*
+This is referring to the Main division
+*/
+.main{
+    margin-top: 10vh;
+    display: inline-block;
+    padding: 20px;
+}
+
+/*
+This is referring to our second headers within the main division
+*/
+.main h2{
+    font-size: 35px;
+}
+
+/*
+This is referring to our paragraph within the main division
+*/
+main p{
+    font-size: 16px;
+    line-height: 23px;
+}
+
+/*
+This is where we begin to set how the button would look
+*/
+button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/*
+We then set it so when the button is hovered we get these colors
+*/
+button:hover{
+    border-color:cadetblue;
+    background-color: cadetblue;
+}
+
+
+
+/*
+Within the image wrapper, the item img would have a max-width of 500
+*/ 
+.image-wrapper img{
+    max-width: 500px;
+}
+
+/*
+We then set the image wrapper's
+*/
+.image-wrapper{
+    display: flex;
+    margin-top: 5vh;
+    position: relative;
+}
+
+/*
+We then set the attrebute division 
+*/
+.attrebute{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-size: 12px;
+}
+
+
+
+
+#about .card, #features .card{
+    display: black;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    background: rgba(0,0,0,0.56);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#about .card:hover{
+    border-color: #fff;
+    box-shadow: none;
+}
+
+#about .card img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#about .card .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#about .card .info h1, #Skillset .card .info h1{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+
+#about .card .info p, #Skillset .card .info p{
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+#about .card .info p, #Skillset .card .info p{
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+
+/*
+All of this is for the skillset section
+
+The first one is for feature-cards whioch contains all of the other cards
+*/
+
+
+#Skillset .header{
+    color: #000000;
+    
+}
+
+#Skillset .feature-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    display: black;
+}
+
+/*
+Here we are creating the rules for every card that's made
+*/
+#Skillset .feature-cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 350px;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    background: rgba(0,0,0,0.56);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+
+/*
+Here we are creating the rules for every cards box icon
+*/
+#Skillset .feature-cards .card .info i{
+    color: #fff;
+    font-size: 8rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+#Skillset .feature-cards .card:hover{
+    border-color: #ffffff;
+    box-shadow: none;
+}
+
+/*
+Here we are creating the rules for the headers
+*/
+#Skillset .feature-cards .card .info h1{
+    text-align: center;
+}
+
+/*
+Here we are creating the rules for the paragraphs
+*/
+#Skillset.feature-cards .card .info p{
+    font-size: 1.1rem;
+}
+
+
+
+
+
+@media screen and (max-width: 1075px){
+    .content{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    .logo{
+        font-size: 22px;
+    }
+    li.nav-link{
+        font-size: 13px;
+
+    }
+    .main h2{
+        font-size: 28px;
+    }
+
+    .main p{
+        font-size: 15px;
+    }
+    button{
+        font-size: 13px;
+    }
+    .image-wrapper img{
+        max-width: 400px;
+    }
+
+    #about .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .card img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!---
+        First we create the heading that's shown on the webpage
+    -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <!-- The style of our sheet is connected to our style.css sheet-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Nelson Alvarez Porfolio</title>
+</head>
+
+<!---
+        Next we create the body of the webpage, this is where the design is crucial
+    -->
+
+<body>
+
+    <!-- The first divider is the container which has a class container divider inside-->
+    <div class="container">
+        <div class="glass-container">
+            <nav class="navbar">
+                <!-- We create the divider called logo so that we contain the title for this navigation bar, right now when they are clicked it links to the top of the page-->
+                <div class="logo"><a href="#">Ready To Refine & Move Towards A Better Tommorow?</a></div>
+
+                <ul class="nav-links">
+                    <li class="nav-link"><i class='bx bxl-github' style="font-size: 1.5em;"></i><a
+                            href="https://github.com/DebuggingaHopper"><b>Github</b></a></li>
+                    <li class="nav-link"><i class='bx bxl-linkedin-square' style="font-size: 1.5em;"></i><a
+                            href="https://www.linkedin.com/in/nelson-alvarez-62027b189"><b>Linkedin</b></a></li>
+                    <li class="nav-link"><i class='bx bxs-envelope' style="font-size: 1.5em;"></i><a
+                            href="mailto:“nelson.j.alvarez01@gmail.com"><b>Email</b></a></li>
+                </ul>
+            </nav>
+
+            <!-- We then create another division where the main content for this card is located-->
+            <div class="content">
+                <!-- we then create the divider with the name main where we have the main content-->
+                <div class="main">
+                    <h2>Interested in employing a new member for your DevOps Team?<br> Then greetings, I'm Nelson Josue
+                        Alvarez. It's a pleasure to connect with you.</h2>
+                    <p>
+                        Employers seeking a versatile Technical Operations Specialist who has worked in the hospital
+                        industry to construct Sever Builds, and mantain enabling technologies look no further.
+                        <br>
+                        <br>
+                        At 22, I offer a potent combination of youthful vigor and seasoned proficiency to enhance your
+                        team's capabilities.
+                    </p>
+                    <button>
+                        <a class=”link” href="mailto:“nelson.j.alvarez01@gmail.com" target="_blank">
+                            Let's get connected
+                        </a>
+                    </button>
+                </div>
+
+                <!-- This is where we create a divider that stores an image-->
+                <div class="image-wrapper">
+                    <img src="SM.png">
+                    <div class="attrebute">
+                        <a
+                            href="https://www.freepik.com/free-vector/flat-design-muted-colors-illustration_36764618.htm#fromView=search&page=1&position=6&uuid=a8cc5175-95cc-4e95-aad9-5afae954f4f3">Mountain
+                            Image </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- What we are creating here is the about section of the page, I dont belie've this looks right so i'll comment this section out-->
+
+    <section id="about">
+
+        <div class="card">
+
+            <img src="Nelson_icon.png">
+
+
+            <div class="info">
+                <h1> Who Am I and What Do I Bring?</h1>
+                <p>
+                    I'm a Technical Operations Specialist who currently works in constructing,installing and mantaining
+                    Windows Servers that host applications that communciate to devices which automate drug compounding.
+                    <br>
+                    I have been given the pleasure to be exposed to many enabling technologies of the Hospital industry and Devops enviornment through my Technical Operations Role.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--We then create the skillset section of the webpage-->
+    <section id="Skillset">
+
+        <!--Then we create the division called feature-cards-->
+        <div class="feature-cards">
+
+            <!-- create the card division-->
+            <div class="card">
+                <!-- we then create the info division -->
+                <div class="info">
+
+                    <i class='bx bxs-book'></i>
+                    <h1>independent Research / Projects</h1>
+                    <p>
+                        At the age of 20 assisted in publishing of <b><em>Crowdfunding Fraud Prevention using Smart Contracts.</em></b>
+
+                        Since then I have been working in learning and applying DevOps tools in various personal projects I work on such as this portfolio.
+                    </p>
+
+                </div>
+            </div>
+            <!-- we create another card within skillset-->
+            <div class="card">
+                <div class="info">
+                    <i class='bx bx-code-alt'></i>
+
+                    <h1>Chargers Link</h1>
+                    <p>
+                        During my final year at Capitol Technology University I developed Chargers Link which was a cross platform mobile application constructed
+                        in Flutter to deliver and display crucial information for the student population.
+                    </p>
+                </div>
+            </div>
+            <!-- we create another card within skillset-->
+            <div class="card">
+                <div class="info">
+                    <i class='bx bx-plus-medical'></i>
+                    <h1>Hospital Industry Specialization</h1>
+                    <p>
+                        Constructing and Mantaining Windows 2012 and 2022 Servers which hosts an Oracle Database alongisde a C#
+                        .NET application which integrates with Hopsital HIS systems such as EPIC.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
